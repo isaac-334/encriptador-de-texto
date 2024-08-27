@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>incriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+   <header>
+    <img src="/imagenes/Logo.png" alt="logo de alura" class="logo">
+   </header> 
+   <main>
+    <form class="formulario__section">
+     <textarea class="formulario__input"  name="mensaje" id="textoInput" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+   
+     <div class="btn__container">
+        <div class="alerta__mensaje"><img src="/imagenes/Vector.png" alt="alerta icono"><span>Solo letras minusculas y sin acentos</span></div>
+      </div>
+   
+     <div class="submit__container">   
+        <input   id="encriptarBtn"  class="form__btn form__btn-encriptar"   type="submit" value="Encriptar">
+        <input id="desencriptarBtn"  class="form__btn form__btn-desencriptar  form__btn--segundary" type="submit" value="Desencriptar">
+    </div>
+    </form>
+    <aside class="resultado">
+        
+        <img src="/imagenes/Muñeco.png" alt="imagen de Muñeco" class="resultado__Muñeco">
+        <div class="resultado__container">
+        <h3 class="resultado__title">Ningún mensaje fue encontrado</h3>
+        <!--<p class="resultado__texto"></p>-->
+        <div class="resultado__instruccion">Ingresa el texto que desees encriptar o desencriptar.</div>
+        <button class="resultado__btn copiar__btn form__btn form__btn--segundary hidden" >Copiar</button>
+    </div>
+
+    <div class="center">
+        <p class="resultado__texto"></p>
+    </div>
+    
+    </aside>
+   </main>
+
+   <script src="script.js"></script>
+</body>
+</html>

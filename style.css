@@ -1,0 +1,194 @@
+:root{
+    --dark-blue: #0A3871;
+    --main-color: #F3F5FC;
+    --ligth--blue: #D8DFE8; 
+    --inter-font: "Inter", sans-serif;
+    
+}
+
+html{
+    font-size: 65.5%;
+
+}
+
+body{
+    background-color: var(--main-color) ;
+    font-family:var(--inter-font);
+
+}
+
+header{
+    margin-bottom: 5rem;
+    width: 60%;
+}
+
+main{
+   display: flex; 
+   justify-content: space-around;
+}
+
+header img{
+    width: 120px;
+    height: 48px;
+}
+
+.formulario__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70dvb;
+}
+
+.formulario__input{
+    width: 100%;
+    max-width: 577px;
+    height: 64dvh;
+    border-color: transparent;
+    background: transparent;
+    outline: none;
+    font-family:var(--inter-font);
+    font-size: 3.2rem;
+    color:var(--dark-blue);
+    margin-bottom: 3rem;
+    overflow: auto;
+    
+}
+
+::placeholder{
+    color:var(--dark-blue);
+}    
+
+.alerta__mensaje{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.submit__container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.form__btn{
+    background: var(--dark-blue);
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 2 rem;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid var(--dark-blue);
+    font-weight: 60;
+}
+
+.form__btn--segundary{
+    background: transparent ;
+    color: var(--dark-blue);
+}
+
+.copiar__btn {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Compensa el 50% del ancho del botón para centrarlo */
+    width: 100%;
+    max-width: 328px;
+    height: 67px;
+}
+
+
+.resultado{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: 92dvh;
+    border-radius: 32px;
+    max-width: 35rem;
+    width: 100%;
+    margin-top: -8rem;
+    position: relative;
+    padding: 1rem;
+}
+    
+  
+
+.resultado__texto {
+    font-size: 2rem; /* Ajustar el tamaño del texto solo para el resultado */
+    text-align: center;
+    word-wrap: break-word;
+    max-width: 90%; 
+    width: 300px;
+    height: 400px;
+    overflow: auto;
+}
+
+.resultado__instruccion {
+    font-size: 1.2rem; /* Puedes ajustar el valor a lo que prefieras */
+    text-align: center;
+    margin-top: 1rem; /* Puedes ajustar el espacio superior si es necesario */
+}
+
+
+.resultado__Muñeco{
+    display: block;
+    margin-top: 100px;
+    
+
+}
+
+.center{ 
+    position: absolute;
+    margin-top: -1rem;
+}
+
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    main{
+        flex-direction: column;
+    }
+    .submit__container{
+        justify-content: center;
+    }
+    .resultado{
+        height: auto;
+        max-width: 624px;
+        margin-top: 2rem;
+        min-height: 186px;
+    }
+    .resultado__Muñeco{
+        display: none;
+        
+    }
+    header img {
+        width: 73px;
+    }
+
+   .resultado__container{
+    margin-top: 65px;
+   }
+
+    .resultado__texto{
+        overflow: auto;
+        height: 80px;
+    }
+
+    
+}   
+
+
+
+
+
+
+
+
+
+
